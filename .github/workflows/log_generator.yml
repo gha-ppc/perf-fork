@@ -7,7 +7,7 @@ jobs:
   generate-logs:
     name: Generate Logs - ${{ matrix.os }} [${{ matrix.runner_owner }}]
     #runs-on: ${{ matrix.os }}
-    runs-on: "self-hosted"
+    runs-on: "ubuntu-latest-ac922"
     strategy:
       matrix:
         include:
