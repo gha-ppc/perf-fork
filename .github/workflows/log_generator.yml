@@ -7,7 +7,7 @@ jobs:
   generate-logs:
     name: Generate Logs - ${{ matrix.os }} [${{ matrix.runner_owner }}]
     #runs-on: ${{ matrix.os }}
-    runs-on: self-hosted
+    runs-on: "self-hosted"
     strategy:
       matrix:
         include:
@@ -27,7 +27,7 @@ jobs:
           #   runner_owner: "actions-runner-ppc64le"
           #   runner_files: "/opt/runner/_diag/Runner_*"
           #   worker_files: "/opt/runner/_diag/Worker_*"
-          - os: self-hosted
+          - os: "self-hosted"
             runner_owner: "actions-runner-ppc64le"
             runner_files: "/opt/runner/_diag/Runner_*"
             worker_files: "/opt/runner/_diag/Worker_*"
