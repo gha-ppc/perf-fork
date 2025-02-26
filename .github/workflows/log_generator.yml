@@ -6,7 +6,8 @@ on:
 jobs:
   generate-logs:
     name: Generate Logs - ${{ matrix.os }} [${{ matrix.runner_owner }}]
-    runs-on: ${{ matrix.os }}
+    #runs-on: ${{ matrix.os }}
+    runs-on: self-hosted
     strategy:
       matrix:
         include:
