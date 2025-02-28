@@ -6,8 +6,8 @@ on:
 jobs:
   generate-logs:
     name: Generate Logs - ${{ matrix.os }} [${{ matrix.runner_owner }}]
-    #runs-on: ${{ matrix.os }}
-    runs-on: "ubuntu-latest-ac922"
+    runs-on: ${{ matrix.os }}
+    #runs-on: "ubuntu-latest-ac922"
     strategy:
       matrix:
         include:
@@ -27,7 +27,19 @@ jobs:
           #   runner_owner: "actions-runner-ppc64le"
           #   runner_files: "/opt/runner/_diag/Runner_*"
           #   worker_files: "/opt/runner/_diag/Worker_*"
-          - os: "self-hosted"
+          - os: "ubuntu-latest-ac922"
+            runner_owner: "actions-runner-ppc64le"
+            runner_files: "/opt/runner/_diag/Runner_*"
+            worker_files: "/opt/runner/_diag/Worker_*"
+          - os: "ubuntu-latest-pdc"
+            runner_owner: "actions-runner-ppc64le"
+            runner_files: "/opt/runner/_diag/Runner_*"
+            worker_files: "/opt/runner/_diag/Worker_*"
+          - os: "ubuntu-latest-powervs"
+            runner_owner: "actions-runner-ppc64le"
+            runner_files: "/opt/runner/_diag/Runner_*"
+            worker_files: "/opt/runner/_diag/Worker_*"
+          - os: "ubuntu-latest-osu"
             runner_owner: "actions-runner-ppc64le"
             runner_files: "/opt/runner/_diag/Runner_*"
             worker_files: "/opt/runner/_diag/Worker_*"
