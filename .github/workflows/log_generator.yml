@@ -29,10 +29,14 @@ jobs:
           #   runner_owner: "actions-runner-ppc64le"
           #   runner_files: "/opt/runner/_diag/Runner_*"
           #   worker_files: "/opt/runner/_diag/Worker_*"
-          - os: ubuntu-24.04-power10-pdc
+          - os: ubuntu-24.04-p10-pvs
             runner_owner: "actions-runner-ppc64le"
             runner_files: "/opt/runner/_diag/Runner_*"
             worker_files: "/opt/runner/_diag/Worker_*"
+          # - os: ubuntu-24.04-power10-pdc
+          #   runner_owner: "actions-runner-ppc64le"
+          #   runner_files: "/opt/runner/_diag/Runner_*"
+          #   worker_files: "/opt/runner/_diag/Worker_*"
           # - os: "ubuntu-latest-ac922"
           #   runner_owner: "actions-runner-ppc64le"
           #   runner_files: "/opt/runner/_diag/Runner_*"
